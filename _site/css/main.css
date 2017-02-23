@@ -21,26 +21,27 @@ img {
   height: auto;
 }
 
- a:hover {
-   color: #84D2F6;
- }
+a:hover {
+  color: #84D2F6;
+}
 
- h1 {
-   font-family: 'Amaranth', sans-serif;
-   font-size: 3rem;
-   color: #386FA4;
- }
+h1 {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 2px 0px black;
+}
 
- h2 {
-   font-family: 'Didact Gothic', sans-serif;
-   font-size: 2rem;
-   color: #133C55;
+h2 {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 3rem;
+  color: #133C55;
  }
 
  h3 {
-   font-family: 'Amaranth', sans-serif;
-   font-size: 1rem;
-   color: #386FA4;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 1rem;
+  color: #386FA4;
  }
 
 p {
@@ -52,6 +53,17 @@ p {
 nav {
   text-align: center;
 }
+
+/*White faded border boxes*/
+.white_border {
+  border: white solid 0.3rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.center {
+  text-align: center;
+}
+
 /*Universal styles close*/
 
 /*Header Styles open*/
@@ -61,21 +73,80 @@ width: 100%;
 background-color: rgba(255, 255, 255, 0.8);
 }
 
-
 /*Header Styles close*/
 
 /*Body opens*/
+/*padding around everything (minus the map)*/
+.padded {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+/*home section open*/
 .home {
   background-image:url("/images/home_background.jpg");
   background-size: cover;
   height: 100vh;
   padding-top: 100px;
-}
-
-.bottle {
   text-align: center;
 }
 
 .bottle_image img {
-  width: 200px;
+  width: 400px;
 }
+/*home section close*/
+
+/*product information section open*/
+.product_info {
+  background-image: url("/images/product_info2.jpg");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+
+.product_info {
+  padding-top: 5%;
+}
+
+/*product information section close*/
+
+/*benefits section open*/
+.benefits {
+  background-image: url("/images/benefits.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+/*benefits section close*/
+
+/*location section open*/
+.location div p {
+padding-right: 2%;
+}
+
+
+
+/*location section close*/
+
+/*updates section open*/
+.updates {
+  background-color: #133C55;
+}
+
+
+
+/*updates section close*/
+
+/*contact us section open*/
+
+
+
+/*contact us section close*/
+
+
+/*footer section open*/
+.footer{
+  text-align: center; ?????????????
+}
+
+/*footer section close*/

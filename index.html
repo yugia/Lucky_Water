@@ -4,12 +4,11 @@ title: Lucky Water
 ---
 
 <!-- What is Lucky Water section -->
-<section class="home grid">
+<section class="home grid padded">
 
-  <!-- TODO: insert Gridlex -->
-    <div class="col-6 bottle">
+    <div class="col-6 bottle_description">
       <h1>What is Lucky Water?</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="white_border">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="col-6 bottle_image">
       <!-- TODO: insert possible animation? -->
@@ -19,38 +18,29 @@ title: Lucky Water
 <!-- TODO: Insert break page -->
 
 <!-- Product Information section -->
-<section id="product">
-  <h2>Product Information</h2>
-  <!-- TODO: insert Gridlex -->
-  <div>
-    <img src="" alt="">
-  </div>
-  <div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-  </div>
+<section id="product" class="padded product_info grid">
+  <h2 class="col-6">Product Information</h2>
+    <p class="white_border col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 </section>
 <!-- TODO: Insert break page -->
 
 <!-- Benefits section -->
-<section id="benefits">
+<section id="benefits" class="padded benefits grid center">
+  <div class="col-6">
   <h2>Benefits</h2>
-  <!-- TODO: insert Gridlex -->
-  <div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-  </div>
-  <div>
-    <img src="" alt="">
+    <p class="white_border">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
   </div>
 </section>
 <!-- TODO: Insert break page -->
 
 <!-- Location section -->
-<section id="location">
-  <div>
-    <!-- TODO: Insert map image -->
+<section id="location" class="grid location">
+  <div class="col-6">
+    <!-- TODO: Insert map image, temporary for now -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14767.564034687113!2d114.151063179929!3d22.282118115326746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040064a31dd1bd%3A0x5007a73bdeccb552!2sCentral%2C+Hong+Kong!5e0!3m2!1sen!2sca!4v1487318356211" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
-  <div>
-    <h2>Location</h2>
+  <div class="col-6">
+    <h2>Location: Chilliwack, Canada</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
   </div>
@@ -58,13 +48,22 @@ title: Lucky Water
 <!-- TODO: Insert break page -->
 
 <!-- Updates secion -->
-<section id="updates">
+<section id="updates" class="padded grid updates">
 <!-- Use lightbox? for photo/info enlargement, jekyll loop? -->
-<h2>Updates</h2>
+  <h2 class="col-12 center white_border">Updates</h2>
+  <div class="col-4 center white_border">
+    <p>TBC</p>
+  </div>
+  <div class="col-4 center white_border">
+    <p>Upcoming Event</p>
+  </div>
+  <div class="col-4 center white_border">
+    <p>Launch Date</p>
+  </div>
 </section>
 
 <!-- Contact us section  -->
-<section id="contact">
+<section id="contact" class="padded center">
   <h2>Contact Us</h2>
   <h3>Address: Blah</h3>
   <h3>Retailer / Distributor: Phone # </h3>
