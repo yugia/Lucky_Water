@@ -7,7 +7,9 @@
     <title>{{page.title}}</title>
 <!-- Universal reset: Normalize style sheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Amaranth|Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.4/gridlex.min.css">
+
 <!-- TODO: Icon font, little icons from other site -->
 <!-- Link to css stylesheet, stay on the bottom of the head section -->
     <link rel="stylesheet" href="css/main.css">
@@ -19,7 +21,7 @@
 {% include header.html %}
 
 <!-- Main open -->
-    <div class="main">
+    <div class="main" id="home">
     {{content}}
     </div>
 <!-- Main close -->

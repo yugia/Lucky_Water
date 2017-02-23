@@ -12,6 +12,8 @@ html {
 a {
   text-decoration: none;
   color: #133C55;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 1.5rem;
 }
 
 img {
@@ -30,7 +32,7 @@ img {
  }
 
  h2 {
-   font-family: 'Bree Serif', serif;
+   font-family: 'Didact Gothic', sans-serif;
    font-size: 2rem;
    color: #133C55;
  }
@@ -42,26 +44,38 @@ img {
  }
 
 p {
-  font-family: 'Bree Serif', serif;
+  font-family: 'Didact Gothic', sans-serif;
   font-size: 1.5rem;
   color: black;
+}
 
+nav {
+  text-align: center;
 }
 /*Universal styles close*/
 
-/*Temporary borders open*/
+/*Header Styles open*/
 header {
-  border: 2px solid red;
-  padding: 50px;
+position: fixed;
+width: 100%;
+background-color: rgba(255, 255, 255, 0.8);
 }
 
-.main {
-  border: 2px solid blue;
-  padding: 50px;
+
+/*Header Styles close*/
+
+/*Body opens*/
+.home {
+  background-image:url("/images/home_background.jpg");
+  background-size: cover;
+  height: 100vh;
+  padding-top: 100px;
 }
 
-footer {
-  border: 2px solid green;
-  padding: 50px
+.bottle {
+  text-align: center;
 }
-/*Temporary borders close*/
+
+.bottle_image img {
+  width: 200px;
+}
