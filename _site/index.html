@@ -30,16 +30,17 @@
 
 <!-- Header open -->
     <header>
-      <nav class="grid-middle">
-<!-- TODO: Insert logo & include ID -->
-        <a href="#home" class="col-1">
+      <nav>
+        <a class="logo" href="#home">
           <img src="images/lucky_logo.png"/>
         </a>
-        <a href="#product" class="col">Product Information</a>
-        <a href="#benefits" class="col">Benefits</a>
-        <a href="#location" class="col">Location</a>
-        <a href="#updates" class="col">Updates</a>
-        <a href="#footer" class="col">Contact Us</a>
+        <div class="nav_items">
+          <a href="#product">Product Information</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#location">Location</a>
+          <a href="#updates">Updates</a>
+          <a href="#footer">Contact Us</a>
+        </div>
       </nav>
     </header>
 <!-- Header close -->
@@ -63,7 +64,7 @@
 
 <!-- Product Information section -->
 <section id="product" class="product_info grid padding">
-  <h2 class="col-6">Product <br />Information</h2>
+  <h2 class="col-6">Product Information</h2>
     <p class="white_border col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 </section>
 <!-- TODO: Insert break page -->
@@ -81,13 +82,15 @@
 <!-- TODO: Insert break page -->
 
 <!-- Location section -->
-<section id="location" class="grid location">
+<section class="grid location">
   <div class="col-6 map">
-    <!-- TODO: Insert map image, temporary for now -->
-    <iframe height="400" width="100%" border="0" marginwidth="0" marginheight="0" src="https://www.mapquest.com/embed/canada/bc/chilliwack-282172369?center=49.14308858462884,-121.8651580810547&zoom=10&maptype=map"></iframe>
-
+    <img src="images/small_map.png" alt="Lucky Water Chilliwack zoomed in map">
+    <img src="images/big_map.png" alt="Lucky Water Chilliwack zoomed out map">
   </div>
   <div class="col-6">
+    <div id="location" class="hidden">
+      <h2>hidden</h2>
+    </div>
     <h2>Location: Chilliwack, Canada</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
@@ -96,17 +99,19 @@
 <!-- TODO: Insert break page -->
 
 <!-- Updates secion -->
-<section id="updates" class="grid updates padding">
+<section id="updates" class="grid updates">
 <!-- Use lightbox? for photo/info enlargement, jekyll loop? -->
   <h2 class="col-12 center">Updates</h2>
     <div class="col center white_border">
-    <p>TBC</p>
+    <p class=" updates_padding"><b>Event:</b> China Food & Drinks Fair</p>
+    <p class=" updates_padding">Date: March 20-23, 2017</p>
+    <p class=" updates_padding">Location: Chengdu, Sichuan, China</p>
   </div>
   <div class="col center white_border">
-    <p>Upcoming Event</p>
+    <p class=" updates_padding">Upcoming Event</p>
   </div>
   <div class="col center white_border">
-    <p>Launch Date</p>
+    <p class=" updates_padding">Launch Date</p>
   </div>
 </section>
 
@@ -117,13 +122,20 @@
 <footer id="footer" class="padded center contact">
 
   <h2>Contact Us</h2>
-  <h3>Address: <br />Blah<br />Blah<br />Blah</h3>
-  <h3>Retailer / Distributor: <br />+86 40 0103 5788 </h3>
-  <h3>Email: <br />dlget@luckywater.ca</h3>
-
+  <div class="footer-content">
+    <h3>Address:</h3>
+    <h4>No.28 Xinda Street<br />Hi-tech Zone<br />Dalian, 116023, China</h4>
+    <h3>Phone:</h3>
+    <h4>+86 40 0103 5788 </h4>
+    <h3>Email:</h3>
+    <h4><a href="mailto:dlget@luckywater.ca">dlget@luckywater.ca</a></h4>
+  </div>
   <p>Copyright © 2017 Lucky Water Inc. All rights reserved.</p>
 </footer>
 <!-- Footer close -->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
 
 
   </body>

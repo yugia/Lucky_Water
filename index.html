@@ -19,7 +19,7 @@ title: Lucky Water
 
 <!-- Product Information section -->
 <section id="product" class="product_info grid padding">
-  <h2 class="col-6">Product <br />Information</h2>
+  <h2 class="col-6">Product Information</h2>
     <p class="white_border col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 </section>
 <!-- TODO: Insert break page -->
@@ -37,13 +37,15 @@ title: Lucky Water
 <!-- TODO: Insert break page -->
 
 <!-- Location section -->
-<section id="location" class="grid location">
+<section class="grid location">
   <div class="col-6 map">
-    <!-- TODO: Insert map image, temporary for now -->
-    <iframe height="400" width="100%" border="0" marginwidth="0" marginheight="0" src="https://www.mapquest.com/embed/canada/bc/chilliwack-282172369?center=49.14308858462884,-121.8651580810547&zoom=10&maptype=map"></iframe>
-
+    <img src="images/small_map.png" alt="Lucky Water Chilliwack zoomed in map">
+    <img src="images/big_map.png" alt="Lucky Water Chilliwack zoomed out map">
   </div>
   <div class="col-6">
+    <div id="location" class="hidden">
+      <h2>hidden</h2>
+    </div>
     <h2>Location: Chilliwack, Canada</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
@@ -52,16 +54,18 @@ title: Lucky Water
 <!-- TODO: Insert break page -->
 
 <!-- Updates secion -->
-<section id="updates" class="grid updates padding">
+<section id="updates" class="grid updates">
 <!-- Use lightbox? for photo/info enlargement, jekyll loop? -->
   <h2 class="col-12 center">Updates</h2>
     <div class="col center white_border">
-    <p>TBC</p>
+    <p class=" updates_padding"><b>Event:</b> China Food & Drinks Fair</p>
+    <p class=" updates_padding">Date: March 20-23, 2017</p>
+    <p class=" updates_padding">Location: Chengdu, Sichuan, China</p>
   </div>
   <div class="col center white_border">
-    <p>Upcoming Event</p>
+    <p class=" updates_padding">Upcoming Event</p>
   </div>
   <div class="col center white_border">
-    <p>Launch Date</p>
+    <p class=" updates_padding">Launch Date</p>
   </div>
 </section>
