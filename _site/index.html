@@ -14,13 +14,15 @@
 <!-- Head open: Does not show on the website -->
   <head>
     <meta charset="utf-8">
-    <title>Lucky Water</title>
+    <title>Lucky Water - Canadian Bottled Water</title>
+    <!-- include all the meta descriptions and etc -->
 <!-- Universal reset: Normalize style sheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Amaranth|Didact+Gothic" rel="stylesheet">
+    <link <link href="https://fonts.googleapis.com/css?family=Oswald|Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.4/gridlex.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- TODO: Icon font, little icons from other site -->
 <!-- Link to css stylesheet, stay on the bottom of the head section -->
@@ -32,18 +34,44 @@
 
 <!-- Header open -->
     <header>
-      <nav>
+      <nav >
         <a class="logo" href="#home">
           <img src="images/lucky_logo.png"/>
         </a>
-        <div class="nav_items">
-          <a href="#product">Product Information</a>
+        <div class="nav_items mobilehide">
+          <a class="two" href="#product">Product Information</a>
           <a href="#benefits">Benefits</a>
           <a href="#location">Location</a>
-          <a href="#events">Upcoming Events</a>
-          <a href="#footer">Contact Us</a>
+          <a class"two" href="#events">Upcoming Events</a>
+          <a class"two" href="#footer">Contact Us</a>
         </div>
       </nav>
+      <nav class="mobileshow">
+      <div class="burger-button">
+          <span class="burger-top"></span>
+          <span class="burger-middle"></span>
+          <span class="burger-bottom"></span>
+      </div>
+       <div class="burger-menu">
+        <ul>
+          <li>
+            <a class="two" href="#product">Product Information</a>
+          </li>
+          <li>
+            <a href="#benefits">Benefits</a>
+          </li>
+          <li>
+            <a href="#location">Location</a>
+          </li>
+          <li>
+            <a class"two" href="#events">Upcoming Events</a>
+          </li>
+          <li>
+            <a class"two" href="#footer">Contact Us</a>
+          </li>
+        <ul>
+      </div>
+    </nav>
     </header>
 <!-- Header close -->
 
@@ -53,45 +81,46 @@
     <!-- What is Lucky Water section -->
 <section class="home grid padding">
 
-    <div class="col-7 bottle_description">
+    <div class="col-7_sm-12 bottle_description">
       <h1>What is Lucky Water?</h1>
-      <p class="white_border">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="white_border"> Only the best water available!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div class="col-5 bottle_image">
+    <div class="col-5 mobilehide bottle_image">
       <img class="animated fadeInRight" src="images/bottle.png" alt="Lucky Water bottled water">
     </div>
 </section>
 
 <!-- Product Information section -->
 <section id="product" class="product_info grid padding">
-  <h2 class="col-6">Product Information</h2>
-    <p class="white_border col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+  <h2 class="col-6_sm-12">Product Information</h2>
+    <p class="white_border col-6_sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 </section>
 
 <!-- Benefits section -->
 <section id="benefits" class="benefits grid center padding">
-  <div class="col-6">
+  <div class="col-6_sm-12">
   </div>
-  <div class="col-6">
+  <div class="col-6_sm-12">
   <h2>Benefits</h2>
   <div class="grid">
-    <div class="col-4 white_border">
+    <div class="col-4_sm-12 white_border">
       <i class="fa fa-envira fa-3x col-8" aria-hidden="true"></i>
     </div>
-    <div class="col-8 white_border">
-      <p class="left">Benefit #1</p>
+    <div class="col-8_sm-12 white_border">
+      <p class="left">Health: Blah blah blah blah blah blah blah</p>
     </div>
-    <div class="col-4 white_border">
+    <div class="col-4_sm-12 white_border">
       <i class="fa fa-thumbs-o-up fa-3x col-8" aria-hidden="true"></i>
     </div>
-    <div class="col-8 white_border">
-      <p class="left">Benefit #2</p>
+    <div class="col-8_sm-12 white_border">
+      <p class="left">Taste: Blah blah blah blah blah blah blah</p>
     </div>
-    <div class="col-4 white_border">
+    <div class="col-4_sm-12 white_border">
       <i class="fa fa-recycle fa-3x col-8" aria-hidden="true"> </i>
     </div>
-    <div class="col-8 white_border">
-      <p class="left">Benefit #3</p>
+    <div class="col-8_sm-12 white_border">
+      <p class="left">Environmentally Friendly: Blah blah blah blah blah blah blah</p>
     </div>
 
   </div>
@@ -103,24 +132,24 @@
 <!-- Location section -->
 <section class="grid center location">
 
-  <div class="col-6 map">
+  <div class="col-6_sm-12 map mobilehide">
     <img class="enlarge" src="images/big_map.png" alt="Lucky Water Chilliwack zoomed out map">
     <h3>Click to enlarge map</h3>
   </div>
-  <div class="col-6" id="location">
+  <div class="col-6_sm-12" id="location">
     <h2>Location: Chilliwack, Canada</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="white_border">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </section>
 
 <!-- Upcoming events secion -->
-<section id="events" class="updates">
+<section id="events" class="events">
   <h2 class="center">Upcoming Events</h2>
 
   <!-- Hover change image effect -->
 <div class="grid events-container">
 
-  <div class="col-6">
+  <div class="col-6_sm-12">
     <figure class="effect-chico">
       <img src="images/20.jpg" alt="img01"/>
 		  <figcaption>
@@ -131,12 +160,12 @@
 	  </figure>
   </div>
 
-  <div class="col-6">
+  <div class="col-6_sm-12">
     <figure class="effect-chico">
       <img src="images/26.jpg" alt="img01"/>
 		  <figcaption>
 			  <h2>Chongqing </br>China Food & </br>Drinks Fair</h2>
-        <p>Date: <i>October, 2017</i></p>
+        <p>Date: <i>October, 2017 (TBC)</i></p>
         <p>Location: <i>Chongqing, China</i></p>
 		  </figcaption>
     </figure>
@@ -153,14 +182,27 @@
 <footer id="footer" class="padded center contact">
 
   <h2>Contact Us</h2>
-  <div class="footer-content">
-    <h3>Address:</h3>
-    <h4>No.28 Xinda Street<br />Hi-tech Zone<br />Dalian, 116023, China</h4>
-    <h3>Phone:</h3>
-    <h4>+86 40 0103 5788 </h4>
-    <h3>Email:</h3>
-    <h4><a href="mailto:dlget@luckywater.ca">dlget@luckywater.ca</a></h4>
+  <div class="footer-content grid">
+
+    <div class="col-4_sm-12">
+      <h3>Address:</h3>
+      <h4>No.28 Xinda Street<br />Hi-tech Zone<br />Dalian, 116023, China</h4>
+    </div>
+
+    <div class="col-4_sm-12">
+      <h3>Phone:</h3>
+      <h4>+86 40 0103 5788 </h4>
+    </div>
+
+    <div class="col-4_sm-12 email">
+      <h3>Email:</h3>
+      <h4>
+        <a href="mailto:dlget@luckywater.ca">dlget@luckywater.ca</a>
+      </h4>
+    </div>
+
   </div>
+
   <p>Copyright © 2017 Lucky Water Inc. All rights reserved.</p>
 </footer>
 <!-- Footer close -->

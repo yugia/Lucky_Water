@@ -18,6 +18,16 @@ $('.enlarge').click(function() {
   $(this).toggleClass('active');
 });
 
+   $(".burger-button, .burger-menu a").click(function(){
+     $(".burger-button").toggleClass("active");
+     $(".burger-menu").slideToggle();
+   });
+
+   $('.effect-chico').bind('touchend', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('hover_effect');
+    });
+
 // more jQuerry codes here
 
 });

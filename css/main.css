@@ -12,6 +12,10 @@
 html {
   box-sizing: border-box;
   }
+  html, body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
 
 *, *:before, *:after, figure {
   box-sizing: inherit;
@@ -24,7 +28,7 @@ html {
 a {
   text-decoration: none;
   color: #133C55;
-  font-family: 'Amaranth', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.5rem;
 }
 
@@ -38,70 +42,37 @@ a:hover {
 }
 
 h1 {
-  font-family: 'Amaranth', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 4rem;
   color: white;
   text-shadow: 2px 2px 0px black;
 }
 
 h2 {
-  font-family: 'Amaranth', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 3rem;
   color: white;
   text-shadow: 2px 2px 0px black;
  }
 
  h3 {
-  font-family: 'Amaranth', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1rem;
   color: #133C55;
  }
 
 h4 {
-  font-family: 'Amaranth', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.9rem;
   color: #133C55;
   text-align: left;
 }
 
 p {
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.5rem;
   color: black;
 }
-
-/* Waves Effect open */
-.wave {
-  position: relative;
-  height: 70px;
-  width: 100%;
-  background: white;
-}
-
-.wave:before {
-        content: "";
-        display: block;
-        position: absolute;
-        border-radius: 100% 50%;
-        width: 55%;
-    height: 80px;
-    background-color: white;
-    right: -5px;
-    top: 40px;
-}
-
-.wave:after {
-        display: block;
-        position: absolute;
-        width: 120%;
-    height: 100px;
-    background-color: white;
-    left: -20px;
-    bottom: 0;
-    transform: rotate(3deg);
-}
-
-/*Waves Effect close*/
 
 *---------------*/
 /***** Chico *****/
@@ -163,7 +134,8 @@ figure.effect-chico img {
 	transform: scale(1.12);
 }
 
-figure.effect-chico:hover img {
+figure.effect-chico:hover img,
+figure.effect-chico.hover_effect img {
 	opacity: 0.5;
 	-webkit-transform: scale(1);
 	transform: scale(1);
@@ -205,7 +177,9 @@ figure.effect-chico p {
 }
 
 figure.effect-chico:hover figcaption::before,
-figure.effect-chico:hover p {
+figure.effect-chico:hover p,
+figure.effect-chico.hover_effect figcaption::before,
+figure.effect-chico.hover_effect p {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
@@ -306,6 +280,7 @@ a:hover {
 h1 {
   padding-top: 15%;
 }
+
 .home .bottle_description {
   padding-left: 10%;
 }
@@ -322,6 +297,7 @@ h1 {
   background-image: url("/images/product_info2.jpg");
   background-attachment: fixed;
   background-size: cover;
+  background-position: 50% 50%;
   min-height: 100vh;
   text-align: center;
   padding-top: 5%;
@@ -346,6 +322,7 @@ h1 {
   min-height: 100vh;
   padding-top: 4%;
   height: calc(100vh - 100px);
+  background-position: 50% 40%;
 }
 
 .benefits h2 {
@@ -365,16 +342,16 @@ h1 {
 
 /*location section open*/
 .location h2 {
-  color: rgba(96, 204, 245, 0);
-  margin-top: 19%;
+  margin-top: 14%;
   padding: 0;
   text-align: left;
 }
 
 .location div p {
-  padding-right: 2%;
+  padding: 2% 2%;
   margin-top: 5%;
   text-align: left;
+  margin-right: 2%;
 }
 
 .location h3 {
@@ -406,6 +383,16 @@ h1 {
   padding-left: 0;
 }
 
+.location {
+  background-image:url("/images/red.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-top: 100px;
+  text-align: center;
+}
+
 /*location section close*/
 
 /*updated events section open*/
@@ -415,54 +402,221 @@ h1 {
   padding-top: 5%;
 }
 
-.updates {
-  background-image: url("/images/updates.jpg");
+.events {
+  background-image: url("/images/events.jpg");
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
   height: calc(100vh - 100px);
 }
 
-.updates h2{
+.events h2{
   color: white;
-  padding-top: 6%;
+  padding-top: 5%;
 }
 /*updated events section close*/
 
 /*contact us and footer section open*/
 footer {
   background-color: #133C55;
-  background-image: url("/images/contact.jpg");
   background-size: cover;
   padding: 1%;
 }
 
 footer h2 {
-  padding-bottom: 2%;
+  padding: 0 2% 2%;
+  text-align: left;
 }
 
 footer h3 {
   font-size: 1.3rem;
   padding-top: 2%;
   text-align: left;
+  color: white;
 }
 
 footer h3, footer h4 {
   text-align: left;
   padding-left: 20%;
+  color: white;
 }
 
 footer p{
   text-align: right;
   font-family: Arial;
   font-size: 1rem;
+  color: white;
 }
 
 .footer-content {
   max-width: 250px;
-  margin:0 auto;
+  margin:0 auto%;
 }
 footer a {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  color: white;
+}
+
+footer div {
+  display: flex;
 }
 /*contact us and footer section close*/
+
+/*hamburger for nav-from dan!*/
+.burger-button {
+  position:fixed;
+  top: 38px;
+  right: 38px;
+  z-index: 9999999999;
+  padding: 8px;
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 25px;
+  border: 2px solid black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: 02px;
+}
+
+.burger-bottom{
+  bottom: 02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+  transform: rotateZ(270deg);
+  border-color: rgba(0,0,0,0)
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 99999999;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  padding: 15px 11px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #C3BFBC;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+.burger-menu li{list-style:none}
+/*
+.dropdown-nav:hover .dropdown-content {
+    display: block;
+} */
+
+/*Responsive Design*/
+
+.mobileshow {
+  display: none;
+}
+
+@media (max-width: 900px) {
+
+.two{
+  line-height: 50px;
+}
+
+.mobileshow {
+  display: inline-block;
+}
+
+.mobilehide {
+  display: none!important;
+}
+
+h1 {
+  padding-top: 0;
+  font-size: 2.5rem;
+}
+
+home p {
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+h1, h2, h3, p {
+  display: center
+}
+
+.home, .product_info, .benefits, .location, .events {
+  min-height: 0;
+  height: auto;
+}
+
+.contact h2 {
+  font-size: 2rem;
+}
+
+.home .bottle_description {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.benefits h2 {
+  padding-top: 0;
+}
+
+.location h2 {
+  margin-top: 0;
+
+.location {
+  padding-top: 0;
+}
+
+.location div p, .location h2 {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.map h3, .map p {
+  margin-left: 50px;
+}
+
+footer h3, footer h4 {
+  font-size: 0.8rem;
+}
+
+footer p {
+  font-size: 0.5rem;
+}
+
+}
