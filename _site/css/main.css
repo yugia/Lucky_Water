@@ -227,7 +227,7 @@ nav {
 header {
 position: fixed;
 width: 100%;
-background-color: rgba(96, 204, 245, 0.8);
+background-color: rgba(96, 204, 245,1s);
 height:100px;
 z-index: 5;
 }
@@ -429,8 +429,8 @@ footer h2 {
   text-align: left;
 }
 
-footer h3 {
-  font-size: 1.3rem;
+footer h3, footer a {
+  font-size: 1.7rem;
   padding-top: 2%;
   text-align: left;
   color: white;
@@ -450,9 +450,10 @@ footer p{
 }
 
 .footer-content {
-  max-width: 250px;
-  margin:0 auto%;
+  margin:0 0;
+  padding-right: 60%;
 }
+
 footer a {
   font-size: 0.8rem;
   color: white;
@@ -595,8 +596,13 @@ h1, h2, h3, p {
   padding-top: 0;
 }
 
+.location {
+  padding-top: 0;
+}
+
 .location h2 {
   margin-top: 0;
+}
 
 .location {
   padding-top: 0;
@@ -609,6 +615,10 @@ h1, h2, h3, p {
 
 .map h3, .map p {
   margin-left: 50px;
+}
+
+.events p {
+  font-size: 1rem;
 }
 
 footer h3, footer h4 {
