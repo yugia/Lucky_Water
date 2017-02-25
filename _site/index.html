@@ -7,7 +7,7 @@
 3. Product information
 4. Benefits
 5. Location
-6. Updates
+6. Upcoming Events
 7. Footer
 <!-- Table of Content close: -->
 
@@ -38,7 +38,7 @@
           <a href="#product">Product Information</a>
           <a href="#benefits">Benefits</a>
           <a href="#location">Location</a>
-          <a href="#updates">Updates</a>
+          <a href="#events">Upcoming Events</a>
           <a href="#footer">Contact Us</a>
         </div>
       </nav>
@@ -79,10 +79,10 @@
 </section>
 
 <!-- Location section -->
-<section class="grid location">
+<section class="grid center location">
   <div class="col-6 map">
-    <img src="images/small_map.png" alt="Lucky Water Chilliwack zoomed in map">
-    <img src="images/big_map.png" alt="Lucky Water Chilliwack zoomed out map">
+    <img class="enlarge" src="images/big_map.png" alt="Lucky Water Chilliwack zoomed out map">
+    <h3">Click to enlarge map</h3>
   </div>
   <div class="col-6" id="location">
     <h2>Location: Chilliwack, Canada</h2>
@@ -90,22 +90,37 @@
   </div>
 </section>
 
-<!-- Updates secion -->
-<section id="updates" class="grid updates">
-<!-- Use lightbox? for photo/info enlargement, jekyll loop? -->
-  <h2 class="col-12 center">Updates</h2>
-    <div class="col center white_border hover_effect">
-    <p class=" updates_padding">Event:<i> China Food & Drinks Fair</i></p>
-    <p class=" updates_padding">Date: <i>March 23-25, 2017</i></p>
-    <p class=" updates_padding">Location: <i>Chengdu, China</i></p>
-    <p class=" updates_padding">Description: <i>One of the largest exhibitions in China and the most influential exhibition in the industry.</i></p>
+<!-- Upcoming events secion -->
+<section id="events" class="updates">
+  <h2 class="center">Upcoming Events</h2>
+
+  <!-- Hover change image effect -->
+<div class="grid events-container">
+
+  <div class="col-6">
+    <figure class="effect-chico">
+      <img src="images/20.jpg" alt="img01"/>
+		  <figcaption>
+			  <h2>Chengdu </br>China Food & </br> Drinks Fair</h2>
+        <p>Date: <i>March 23-25, 2017</i></p>
+        <p>Location: <i>Chengdu, China</i></p>
+		  </figcaption>
+	  </figure>
   </div>
-  <div class="col center white_border">
-    <p class=" updates_padding">Upcoming Event</p>
+
+  <div class="col-6">
+    <figure class="effect-chico">
+      <img src="images/26.jpg" alt="img01"/>
+		  <figcaption>
+			  <h2>Chongqing </br>China Food & </br>Drinks Fair</h2>
+        <p>Date: <i>October, 2017</i></p>
+        <p>Location: <i>Chongqing, China</i></p>
+		  </figcaption>
+    </figure>
   </div>
-  <div class="col center white_border">
-    <p class=" updates_padding">Launch Date</p>
-  </div>
+
+</div>
+
 </section>
 
     </div>

@@ -14,4 +14,10 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     }
   });
 
+$('.enlarge').click(function() {
+  $(this).toggleClass('active');
+});
+
+// more jQuerry codes here
+
 });
