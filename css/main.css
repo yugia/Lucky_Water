@@ -580,7 +580,7 @@ footer div {
   }
 
   .logo img {
-    padding-left: 100px;
+    padding-left: 0;
   }
 
   .mobileshow {
@@ -590,8 +590,6 @@ footer div {
   .mobilehide {
     display: none!important;
   }
-
-
 }
 
 @media (max-width: 900px) {
