@@ -681,6 +681,8 @@ footer h3, footer h4, footer div a {
 
   h1 {
     margin-top: 20%;
+    font-size: 2rem;
+    }
   }
 
   p  {
@@ -688,9 +690,6 @@ footer h3, footer h4, footer div a {
   }
 
   @media (max-width: 500px) {
-    h1 {
-      font-size: 2rem;
-    }
 
     h3 {
       font-size: 1.3rem;
