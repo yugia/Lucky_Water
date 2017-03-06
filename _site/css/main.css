@@ -575,7 +575,7 @@ footer div {
 @media (max-width: 1050px) {
 
   . banner {
-    background-size: auto;
+    background-size: contain;
   }
 
 
