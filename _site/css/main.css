@@ -599,6 +599,10 @@ footer div {
 
 @media (max-width: 900px) {
 
+.banner {
+   background-attachment: initial;
+}
+
 h1 {
   padding-top: 15%;
   font-size: 2.5rem;
