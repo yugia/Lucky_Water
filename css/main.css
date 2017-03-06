@@ -574,6 +574,11 @@ footer div {
 
 @media (max-width: 1050px) {
 
+  . banner {
+    background-size: auto;
+  }
+
+
   .nav_items {
     padding-right: 0;
   }
