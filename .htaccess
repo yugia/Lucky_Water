@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteBase /
-RewriteCond %{HTTP_HOST} ^luckywater.ca$ [NC]
-RewriteRule ^$ http://www.luckywater.ca/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} !^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://www\.%{HTTP_HOST}/$1 [R=301,L]
